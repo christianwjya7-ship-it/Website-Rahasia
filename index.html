@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 1 year "Temen Deket"!!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="Musik
++.mp3" loop></audio>
+
+<!-- BACKGROUND LOVE -->
+<div class="hearts"></div>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen">
+  <h1>Sabar Yah</h1>
+  <p>Dear grace</p>
+  <h2>Ini Bakal kebuka di_</h2>
+
+  <div id="countdown">
+    <div><span id="days">0</span><small>Hari</small></div>
+    <div><span id="hours">0</span><small>Jam</small></div>
+    <div><span id="minutes">0</span><small>Menit</small></div>
+    <div><span id="seconds">0</span><small>Detik</small></div>
+  </div>
+
+  <p class="lock-note">Hao che</p>
+</div>
+
+
+<div id="app">
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+    <h1>Happy 1 Year Jadi "Temen Deket" bby!</h1>
+    <p>Semoga Kmu suka yaaa❤️</p>
+
+    <div class="buttons">
+      <button class="btn" onclick="openPage('gallery')">📸 Foto</button>
+      <button class="btn" onclick="openPage('letter')">💌 Love Letter</button>
+      <button class="btn" onclick="openPage('gift')">🎁 Kado</button>
+      <button class="btn" onclick="openPage('music')">🎵 Music</button>
+    </div>
+  </section>
+
+  <!-- GALERI FOTO -->
+  <section id="gallery" class="page">
+    <h2>Kenangan Kita 📸</h2>
+
+    <div class="photo-wrapper">
+      <div class="photo-slider" id="photoSlider">
+        <!-- FOTO 1 - 20 -->
+        <div class="photo-card"><img src="images/foto1.jpg"><p>Main Game Teamwork pertama Kita</p></div>
+        <div class="photo-card"><img src="images/foto2.jpg"><p>Foto Pertama u yang i post sampe pada heboh</p></div>
+        <div class="photo-card"><img src="images/foto3.jpg"><p>Foto Badut pertama yg u kirim</p></div>
+        <div class="photo-card"><img src="images/foto4.jpg"><p>Foto badut kita ber 2</p></div>
+        <div class="photo-card"><img src="images/foto5.jpg"><p>Gambar Paling Keren🤣</p></div>
+        <div class="photo-card"><img src="images/foto6.jpg"><p>Foto Favorit i</p></div>
+        <div class="photo-card"><img src="images/foto7.jpg"><p>Foto Kita Kejebak Disekolah</p></div>
+        <div class="photo-card"><img src="images/foto8.jpg"><p>foto i yang u post di third</p></div>
+        <div class="photo-card"><img src="images/foto9.jpg"><p>Cie Nyender</p></div>
+        <div class="photo-card"><img src="images/foto10.jpg"><p>Foto pap u</p></div>
+
+        <div class="photo-card"><img src="images/foto11.jpg"><p>Foto paling lucuk</p></div>
+        <div class="photo-card"><img src="images/foto12.jpg"><p>Melet WKKKW</p></div>
+        <div class="photo-card"><img src="images/foto13.jpg"><p>Foto di post di SW WKWK</p></div>
+        <div class="photo-card"><img src="images/foto14.jpg"><p>Random</p></div>
+        <div class="photo-card"><img src="images/foto15.jpg"><p>NARIK TAS WKWKKWKW</p></div>
+
+        <div class="photo-card"><img src="images/foto16.jpg"><p>POSE APANI WKAWKQK</p></div>
+        <div class="photo-card"><img src="images/foto17.jpg"><p>Lucu</p></div>
+        <div class="photo-card"><img src="images/foto18.jpg"><p>Cie make kado dri i</p></div>
+        <div class="photo-card"><img src="images/foto19.jpg"><p>Foto di pik🤗</p></div>
+        <div class="photo-card"><img src="images/foto20.jpg"><p>eh di catok in</p></div>
+      </div>
+
+      <div class="indicator" id="indicator">1 / 20</div>
+    </div>
+
+    <p class="hint">Geser kiri / kanan</p>
+    <button class="btn back" onclick="goHome()">⬅ Kembali</button>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section id="letter" class="page">
+    <div class="envelope" onclick="openEnvelope()">
+      <div class="flap"></div>
+      <div class="letter">
+        <h3>Dear Grace</h3>
+        <p>
+         Makasih udah tetep mau sama i meskipun i masih banyak kurangnya
+         makasih juga masih mau nemenin i jadi lebih baik lagi
+         i harap kita bisa terus bareng dan jadi lebih ngertiin 1 sama lain 
+         meskipun kadang kita fight karna hal kecil,tapi pasti ada cara buat
+         memperbaiki itu,i love u so much grace :3     -fool
+        </p>
+      </div>
+    </div>
+    <p class="hint">Klik amplopnya</p>
+    <button class="btn back" onclick="goHome()">⬅ Kembali</button>
+  </section>
+
+  <!-- KADO -->
+  <section id="gift" class="page">
+    <div class="paper gift">
+      <h2>Gift For U</h2>
+      <p>
+        coming soon! (spoiler) i ada rencana mau ngasih u buket bunga,
+        meskipun bakal ga kepake tapi i harap u suka. 💖
+      </p>
+    </div>
+    <button class="btn back" onclick="goHome()">⬅ Kembali</button>
+  </section>
+
+  <!-- MUSIC -->
+  <section id="music" class="page">
+    <h2>Lagu yang nge gambarin u</h2>
+
+    <p class="music-title">
+      Setiap denger lagu ini, aku inget kmu trus😁
+    </p>
+
+    <div class="spotify">
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1GEBsLDvJGw7kviySRI6GX?utm_source=generator"
+        width="100%" height="380"
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      </iframe>
+    </div>
+
+    <button class="btn back" onclick="goHome()">⬅ Kembali</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
